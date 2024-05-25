@@ -1,17 +1,17 @@
 import React from "react";
 import "./Navbar.css";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 const navbar = () => {
   return (
     <div className="n-wrapper" id="Navbar">    
       {/* right */}
       <div className="n-right">
-              <Link className="home" to="App" spy={true} smooth={true}>
+              <Link className="home" to="/">
               <button className="button n-button">Home</button>
               </Link>
-        <a href="/connexion">
-        <button className="button n-button">S'authentifier</button>
-        </a>
+              <Link className="home" to="/connexion">
+              <button className="button n-button">S'authentifier</button>
+              </Link>
       </div>
     </div>
   );
